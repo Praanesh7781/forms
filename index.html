@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Incubator Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Startup Incubator Application Form</h1>
+        <form id="incubatorForm">
+            <!-- Personal Details -->
+            <div class="form-section">
+                <div class="form-section-content">
+                    <h2>Personal Details</h2>
+
+                    <div class="form-field">
+                        <label for="name">Full Name: <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="dob">Date of Birth: <span class="required">*</span></label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-field1">
+                        <label>Gender: <span class="required">*</span></label>
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female" required>
+                        <label for="female">Female</label>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="nationality">Nationality: <span class="required">*</span></label>
+                        <select id="nationality" name="nationality" required>
+                            <option value="">Select</option>
+                            <option value="IN">India</option>
+                            <option value="IN">Others</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="contact">Contact Information: <span class="required">*</span></label>
+                        <input type="tel" id="contact" name="contact" placeholder="Phone Number" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="text" id="address" name="address" placeholder="Address" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="linkedin">LinkedIn Profile:</label>
+                        <input type="url" id="linkedin" name="linkedin">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educational Background -->
+            <div class="form-section">
+                <div class="form-section-content">
+                    <h2>Educational Background</h2>
+
+                    <div class="form-field">
+                        <label for="degree">Highest Degree Earned: <span class="required">*</span></label>
+                        <select id="degree" name="degree" required>
+                            <option value="">Select</option>
+                            <option value="Bachelors">Bachelor's</option>
+                            <option value="Masters">Master's</option>
+                            <option value="PhD">Ph.D.</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="institution">Institution: <span class="required">*</span></label>
+                        <input type="text" id="institution" name="institution" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="field">Field of Study: <span class="required">*</span></label>
+                        <input type="text" id="field" name="field" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="gradDate">Graduation Date: <span class="required">*</span></label>
+                        <input type="date" id="gradDate" name="gradDate" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="achievements">Academic Achievements:</label>
+                        <textarea id="achievements" name="achievements"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Startup Details -->
+            <div class="form-section">
+                <div class="form-section-content">
+                    <h2>Startup Details</h2>
+
+                    <div class="form-field">
+                        <label for="startupName">Startup Name: <span class="required">*</span></label>
+                        <input type="text" id="startupName" name="startupName" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="industry">Industry: <span class="required">*</span></label>
+                        <select id="industry" name="industry" required>
+                            <option value="">Select</option>
+                            <option value="Tech">Technology</option>
+                            <option value="Health">Health</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="stage">Stage of Development: <span class="required">*</span></label>
+                        <select id="stage" name="stage" required>
+                            <option value="">Select</option>
+                            <option value="Idea">Idea</option>
+                            <option value="Prototype">Prototype</option>
+                            <option value="Launch">Launch</option>
+                            <option value="Growth">Growth</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="description">Startup Description: <span class="required">*</span></label>
+                        <textarea id="description" name="description" required></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="uvp">Unique Value Proposition: <span class="required">*</span></label>
+                        <textarea id="uvp" name="uvp" required></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="team">Current Team Members:</label>
+                        <textarea id="team" name="team"></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="website">Website or Demo URL:</label>
+                        <input type="url" id="website" name="website">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Plan -->
+            <div class="form-section">
+                <div class="form-section-content">
+                    <h2>Business Plan</h2>
+
+                    <div class="form-field">
+                        <label for="market">Target Market: <span class="required">*</span></label>
+                        <textarea id="market" name="market" required></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="revenue">Revenue Model: <span class="required">*</span></label>
+                        <textarea id="revenue" name="revenue" required></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="funding">Funding Secured:</label>
+                        <input type="number" id="funding" name="funding" placeholder="Amount in INR">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="financials">Projected Financials:</label>
+                        <input type="file" id="financials" name="financials">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="challenges">Current Challenges:</label>
+                        <textarea id="challenges" name="challenges"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Details -->
+            <div class="form-section">
+                <div class="form-section-content">
+                    <h2>Team Details</h2>
+
+                    <div class="form-field">
+                        <label for="teamMembers">Team Member Names:</label>
+                        <input type="text" id="teamMembers" name="teamMembers">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="roles">Roles and Responsibilities:</label>
+                        <textarea id="roles" name="roles"></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="experience">Experience of Team Members:</label>
+                        <textarea id="experience" name="experience"></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="structure">Team Structure:</label>
+                        <input type="file" id="structure" name="structure">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Market Validation -->
+            <div class="form-section">
+                <div class="form-section-content">
+                    <h2>Market Validation</h2>
+
+                    <div class="form-field">
+                        <label for="feedback">Customer Feedback:</label>
+                        <textarea id="feedback" name="feedback"></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="pilotResults">Pilot Testing Results:</label>
+                        <textarea id="pilotResults" name="pilotResults"></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="research">Market Research:</label>
+                        <input type="file" id="research" name="research">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision and Goals -->
+            <div class="form-section">
+                <div class="form-section-content">
+                    <h2>Vision and Goals</h2>
+
+                    <div class="form-field">
+                        <label for="shortTermGoals">Short-term Goals (1 year): <span class="required">*</span></label>
+                        <textarea id="shortTermGoals" name="shortTermGoals" required></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="longTermGoals">Long-term Goals (5 years): <span class="required">*</span></label>
+                        <textarea id="longTermGoals" name="longTermGoals" required></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="whyIncubator">Why Join the Incubator?: <span class="required">*</span></label>
+                        <textarea id="whyIncubator" name="whyIncubator" required></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="incubatorHelp">How Can the Incubator Help You?: <span class="required">*</span></label>
+                        <textarea id="incubatorHelp" name="incubatorHelp" required></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-section">
+                <div class="form-section-content">
+                    <h2>Additional Information</h2>
+
+                    <div class="form-field">
+                        <label for="references">References:</label>
+                        <input type="text" id="references" name="references" placeholder="Name and Contact Information">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="mentorship">Mentorship Preferences:</label>
+                        <select id="mentorship" name="mentorship">
+                            <option value="">Select</option>
+                            <option value="Technical">Technical</option>
+                            <option value="Business">Business</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="comments">Additional Comments:</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="btn"><button type="submit">Submit Application</button></div>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
